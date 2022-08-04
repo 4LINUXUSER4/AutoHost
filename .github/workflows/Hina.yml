@@ -29,7 +29,7 @@ jobs:
        - name: cloning repo
          continue-on-error: true
          run: |
-           git clone -b db2 https://4LINUXUSER4:${{ secrets.GH_TOKEN }}@github.com/4LINUXUSER4/AE_ENCODER.git 
+           git clone -b orig https://4LINUXUSER4:${{ secrets.GH_TOKEN }}@github.com/4LINUXUSER4/AE_ENCODER.git 
        - name: Running SmartEncoder Bot
          timeout-minutes: 300
          continue-on-error: true
